@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SecondFunction from "./SecondFunction";
 // 1. Import the GIF as a module so Vite bundles it properly
-import bearLoveGif from "./assets/bear-love.gif"; // Adjust path if needed (e.g. "../assets/bear-love.gif")
+import bearLoveGif from "../assets/bear-love.gif"; // Adjust path if needed (e.g. "../assets/bear-love.gif")
 
 export default function CoffeeProposal() {
   const [accepted, setAccepted] = useState(false);
@@ -25,7 +25,7 @@ export default function CoffeeProposal() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-sky-900 text-white font-sans p-4 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-orange-200 text-white font-sans p-4 relative overflow-hidden">
       {/* Central Container Card */}
       <div className="max-w-md w-full bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl flex flex-col items-center relative z-10">
         {/* Bear GIF Container */}
@@ -38,7 +38,7 @@ export default function CoffeeProposal() {
         </div>
 
         {/* Main Question inside the Card */}
-        <h1 className="text-3xl font-semibold text-center mb-8 leading-tight">
+        <h1 className="text-3xl font-semibold text-center mb-8 leading-tight text-black">
           Would you like to get coffee with me?
         </h1>
 
